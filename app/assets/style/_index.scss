@@ -1,0 +1,52 @@
+.banner{
+    @include picture();
+    background: linear-gradient(0deg, rgba(246, 225, 220, 0.5), rgba(246, 225, 220, 0.5)), url(../images/雲朵_確定.jpg);
+
+    h3{
+        font-size: 60px;
+        line-height: 1.5;
+        color:$base;
+        padding-top: 60px;
+        margin-bottom: 36px;
+       }
+    .banner-origin{       
+        .banner-origin-story1{   
+        width: 267px;
+        height: 267px;     
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left:97px ;
+        margin-right: 121px;
+       }       
+      .banner-origin-story2{   
+        width: 267px;
+        height: 267px;     
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 97px;
+        margin-bottom: 162px;
+        }
+    .banner-origin-words1{
+        margin-bottom: 66px;
+        h2,p{
+            color:$base;
+            line-height: 1.5;
+        }
+        p{
+            width: 85%;
+        }        
+        }
+    .banner-origin-words2{
+        margin-left: 97px;
+        
+        h2,p{
+            color:$base;
+            line-height: 1.5;
+            }
+        p{
+            width: 85%;
+        }        
+        }
+     }
+     
+}
