@@ -11652,23 +11652,48 @@ img {
   height: 76px;
 }
 
-.heaader-menu h1, .heaader-menu .h1 {
-  font-size: 20px;
+@media (max-width: 992px) {
+  .heaader-menu .logo-bodhi {
+    width: 48px;
+    height: 68px;
+  }
 }
 
-.heaader-menu li {
+@media (max-width: 992px) {
+  .heaader-menu h1, .heaader-menu .h1 {
+    display: none;
+  }
+}
+
+.heaader-menu .header-menu-group li {
+  padding: 32px 0px;
+}
+
+.heaader-menu .header-menu-group li a {
   color: #524540;
 }
 
-.heaader-menu .contact-button {
+.heaader-menu .header-menu-group li .contact-button {
   color: white;
   background-color: #524540;
   padding: 6px 24px;
   border-radius: 100px;
 }
 
-.heaader-menu .heaader-menu-group {
-  padding: 32px 0px;
+@media (max-width: 576px) {
+  .heaader-menu .header-menu-group {
+    display: none;
+  }
+}
+
+.heaader-menu .menu-hamburger {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .heaader-menu .menu-hamburger {
+    display: block;
+  }
 }
 
 .banner {
