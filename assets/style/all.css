@@ -11713,6 +11713,25 @@ img {
   margin-bottom: 36px;
 }
 
+@media (max-width: 992px) {
+  .banner h3, .banner .h3 {
+    font-size: 40px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner .banner-origin-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
 .banner .banner-origin .banner-origin-story1 {
   width: 267px;
   height: 267px;
@@ -11723,6 +11742,14 @@ img {
   margin-right: 121px;
 }
 
+@media (max-width: 992px) {
+  .banner .banner-origin .banner-origin-story1 {
+    width: 240px;
+    height: 240px;
+    margin: 0px 68px;
+  }
+}
+
 .banner .banner-origin .banner-origin-story2 {
   width: 267px;
   height: 267px;
@@ -11730,33 +11757,87 @@ img {
      object-fit: cover;
   border-radius: 50%;
   margin-right: 97px;
-  margin-bottom: 162px;
+  margin-left: 121px;
+}
+
+@media (max-width: 992px) {
+  .banner .banner-origin .banner-origin-story2 {
+    width: 240px;
+    height: 240px;
+    margin: 0px 68px;
+  }
 }
 
 .banner .banner-origin .banner-origin-words1 {
   margin-bottom: 66px;
 }
 
-.banner .banner-origin .banner-origin-words1 h2, .banner .banner-origin .banner-origin-words1 .h2, .banner .banner-origin .banner-origin-words1 p {
+@media (max-width: 992px) {
+  .banner .banner-origin .banner-origin-words1 {
+    margin-bottom: 60px;
+  }
+}
+
+.banner .banner-origin .banner-origin-words1 h2, .banner .banner-origin .banner-origin-words1 .h2 {
+  font-size: 40px;
   color: #524540;
   line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .banner .banner-origin .banner-origin-words1 h2, .banner .banner-origin .banner-origin-words1 .h2 {
+    margin-top: 40px;
+    font-size: 24px;
+  }
 }
 
 .banner .banner-origin .banner-origin-words1 p {
+  color: #524540;
+  line-height: 1.5;
   width: 85%;
 }
 
+@media (max-width: 992px) {
+  .banner .banner-origin .banner-origin-words1 p {
+    width: 100%;
+  }
+}
+
 .banner .banner-origin .banner-origin-words2 {
+  margin-bottom: 162px;
   margin-left: 97px;
 }
 
-.banner .banner-origin .banner-origin-words2 h2, .banner .banner-origin .banner-origin-words2 .h2, .banner .banner-origin .banner-origin-words2 p {
+@media (max-width: 992px) {
+  .banner .banner-origin .banner-origin-words2 {
+    margin-bottom: 120px;
+    margin-left: 0px;
+  }
+}
+
+.banner .banner-origin .banner-origin-words2 h2, .banner .banner-origin .banner-origin-words2 .h2 {
+  font-size: 40px;
   color: #524540;
   line-height: 1.5;
 }
 
+@media (max-width: 992px) {
+  .banner .banner-origin .banner-origin-words2 h2, .banner .banner-origin .banner-origin-words2 .h2 {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+}
+
 .banner .banner-origin .banner-origin-words2 p {
+  color: #524540;
+  line-height: 1.5;
   width: 85%;
+}
+
+@media (max-width: 992px) {
+  .banner .banner-origin .banner-origin-words2 p {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
