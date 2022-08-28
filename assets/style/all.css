@@ -11643,6 +11643,18 @@ img {
   margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
 .header {
   background-color: #F6E1DC80;
 }
@@ -11678,12 +11690,6 @@ img {
   background-color: #524540;
   padding: 6px 24px;
   border-radius: 100px;
-}
-
-@media (max-width: 576px) {
-  .heaader-menu .header-menu-group {
-    display: none;
-  }
 }
 
 .heaader-menu .menu-hamburger {
@@ -11838,6 +11844,38 @@ img {
   .banner .banner-origin .banner-origin-words2 p {
     width: 100%;
   }
+}
+
+figure h3, figure .h3 {
+  font-size: 60px;
+  line-height: 1.5;
+  color: #524540;
+  padding-top: 80px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 992px) {
+  figure h3, figure .h3 {
+    font-size: 40px;
+    padding-top: 40px;
+  }
+}
+
+figure p {
+  color: #524540;
+  font-size: 24px;
+  margin-bottom: 124px;
+}
+
+@media (max-width: 992px) {
+  figure p {
+    font-size: 16px;
+    margin-bottom: 44px;
+  }
+}
+
+figure .gallery-card .gallery-card-row1 li {
+  width: calc((100% - 50px) / 3);
 }
 
 /*# sourceMappingURL=all.css.map */
