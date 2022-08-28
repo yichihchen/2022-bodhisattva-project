@@ -121,9 +121,22 @@ figure{
         }
     }
     .gallery-card{
+        
+        h4{
+            font-size: 40px;
+            color:$base;
+            line-height: 1.5;
+            border-bottom: 4px solid $primary;
+        }
         .gallery-card-row1{
+            margin-bottom: 76px;
             li{
-                width: calc((100% - 50px) / 3);
+                width: calc((100% - 48px) / 3);
+            }
+        }
+        .gallery-card-row2{
+            li{
+            width: calc((100% - 315px) / 2 );
             }
         }
     }
