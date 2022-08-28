@@ -8,7 +8,19 @@
         color:$base;
         padding-top: 60px;
         margin-bottom: 36px;
+        @include pad(){
+            font-size: 40px;
+            padding-top: 40px;
+            margin-bottom: 40px;
+        }
        }
+    .banner-origin-list{
+        @include pad(){
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+    }
     .banner-origin{       
         .banner-origin-story1{   
         width: 267px;
@@ -17,34 +29,72 @@
         border-radius: 50%;
         margin-left:97px ;
         margin-right: 121px;
+        @include pad(){
+            width: 240px;
+            height: 240px; 
+            margin: 0px 68px;
+
+        }
        }       
       .banner-origin-story2{   
         width: 267px;
         height: 267px;     
         object-fit: cover;
         border-radius: 50%;
-        margin-right: 97px;
-        margin-bottom: 162px;
+        margin-right:97px ;
+        margin-left: 121px;
+        @include pad(){
+            width: 240px;
+            height: 240px;
+            margin: 0px 68px; 
+        }
         }
     .banner-origin-words1{
         margin-bottom: 66px;
-        h2,p{
+        @include pad(){
+            margin-bottom: 60px;
+        }
+        h2{
+            font-size: 40px;
             color:$base;
             line-height: 1.5;
+            @include pad(){
+                margin-top: 40px;
+                font-size: 24px;
+            }
         }
-        p{
+        p{  
+            color:$base;
+            line-height: 1.5;
             width: 85%;
+            @include pad(){
+                width: 100%;
+            }
         }        
         }
     .banner-origin-words2{
+        margin-bottom: 162px;
         margin-left: 97px;
-        
-        h2,p{
+        @include pad(){
+            margin-bottom: 120px;
+            margin-left:0px;
+        }
+        h2{
+            font-size: 40px;
             color:$base;
             line-height: 1.5;
+            @include pad(){
+                margin-top: 40px;
+                font-size: 24px;
             }
-        p{
+            }
+        p{  
+            color:$base;
+            line-height: 1.5;
             width: 85%;
+            @include pad(){
+                width: 100%;
+            }
         }        
         }
      }
