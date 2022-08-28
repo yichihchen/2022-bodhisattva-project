@@ -6,20 +6,37 @@
 .logo-bodhi{
     width: 54px;
     height: 76px;
+   @include pad(){
+    width: 48px;
+    height: 68px;
+   }
 }
 h1{
-    font-size: 20px;
+    @include pad(){
+        display: none;
+    }
 }
-li{
-    color:$base;
+.header-menu-group{
+    li{
+        padding: 32px 0px;
+        a{
+         color:$base;
+        }
+        .contact-button{
+            color:white;
+            background-color: $base;
+            padding: 6px 24px;
+            border-radius: 100px;
+        }
+    }
+    @include iphone(){
+        display: none;
+    }
 }
-.contact-button{
-    color:white;
-    background-color: $base;
-    padding: 6px 24px;
-    border-radius: 100px;
-}
-.heaader-menu-group{
-    padding: 32px 0px;
+.menu-hamburger{
+    display: none;
+    @include iphone(){
+        display: block;
+    }
 }
 }
