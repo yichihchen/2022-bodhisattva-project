@@ -29,9 +29,7 @@ h1{
             border-radius: 100px;
         }
     }
-    @include iphone(){
-        display: none;
-    }
+ 
 }
 .menu-hamburger{
     display: none;

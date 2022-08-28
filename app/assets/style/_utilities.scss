@@ -11,4 +11,12 @@ img {
 .container{
     max-width: 1140px;
     margin: 0 auto;
+
+    @include pad(){
+        max-width:992px;
+    }
+
+    @include iphone(){
+        max-width:576px;
+    }
   }
