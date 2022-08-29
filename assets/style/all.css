@@ -11938,6 +11938,8 @@ figure .gallery-card .gallery-card-row2 li {
   line-height: 1.5;
   color: #524540;
   margin-bottom: 16px;
+  margin-left: 97px;
+  font-weight: 500;
 }
 
 @media (max-width: 992px) {
@@ -11961,6 +11963,7 @@ figure .gallery-card .gallery-card-row2 li {
 
 .author .author-intro-1 {
   line-height: 1.5;
+  margin-left: 97px;
 }
 
 .author .author-pic {
