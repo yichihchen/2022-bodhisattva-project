@@ -11881,6 +11881,12 @@ figure .gallery-card h4, figure .gallery-card .h4 {
   border-bottom: 4px solid #701921;
 }
 
+@media (max-width: 992px) {
+  figure .gallery-card h4, figure .gallery-card .h4 {
+    font-size: 24px;
+  }
+}
+
 figure .gallery-card .gallery-card-row1 {
   margin-bottom: 76px;
 }
@@ -11889,8 +11895,112 @@ figure .gallery-card .gallery-card-row1 li {
   width: calc((100% - 48px) / 3);
 }
 
+@media (max-width: 576px) {
+  figure .gallery-card .gallery-card-row1 li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  figure .gallery-card .gallery-card-row1 img {
+    margin-bottom: 26px;
+  }
+}
+
+figure .gallery-card .gallery-card-row2 {
+  margin-bottom: 124px;
+}
+
+@media (max-width: 576px) {
+  figure .gallery-card .gallery-card-row2 {
+    margin-bottom: 80px;
+  }
+}
+
 figure .gallery-card .gallery-card-row2 li {
   width: calc((100% - 315px) / 2);
+}
+
+@media (max-width: 576px) {
+  figure .gallery-card .gallery-card-row2 li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  figure .gallery-card .gallery-card-row2 .gallery-card-pic4 {
+    margin-bottom: 26px;
+  }
+}
+
+.author h3, .author .h3 {
+  font-size: 60px;
+  line-height: 1.5;
+  color: #524540;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 992px) {
+  .author h3, .author .h3 {
+    font-size: 40px;
+  }
+}
+
+.author h4, .author .h4 {
+  font-size: 40px;
+  color: #524540;
+  line-height: 1.5;
+  border-bottom: 4px solid #701921;
+}
+
+@media (max-width: 992px) {
+  .author h4, .author .h4 {
+    font-size: 24px;
+  }
+}
+
+.author .author-intro-1 {
+  line-height: 1.5;
+}
+
+.author .author-pic {
+  margin-right: 122px;
+}
+
+.author .author-pic img {
+  border-radius: 50%;
+}
+
+.author .author-books {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.author .author-icon-list {
+  margin-top: 56px;
+}
+
+.author .author-icon-wechat, .author .author-icon-email, .author .author-icon-line {
+  width: 60px;
+  height: 60px;
+}
+
+.author .author-icon-wechat {
+  margin-right: 40px;
+}
+
+.author .author-icon-email {
+  margin-right: 40px;
+}
+
+.author .author-books li {
+  font-size: 24px;
+  margin-right: 40px;
+}
+
+.author .author-books li:last-child {
+  margin-right: 0px;
 }
 
 /*# sourceMappingURL=all.css.map */
