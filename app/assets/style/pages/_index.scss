@@ -166,11 +166,14 @@ figure{
 }
 
 .author{
+    
     h3{
         font-size: 60px;
         line-height: 1.5;
         color:$base;
         margin-bottom: 16px;
+        margin-left: 97px;
+        font-weight: 500;
         @include pad(){
             font-size: 40px;
         }
@@ -186,6 +189,7 @@ figure{
     }
     .author-intro-1{
         line-height: 1.5;
+        margin-left: 97px;
     }
     .author-pic{
         margin-right: 122px;
