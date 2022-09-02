@@ -12089,6 +12089,7 @@ figure .gallery-card .gallery-card-row2 li {
 @media (max-width: 768px) {
   .author .author-brief2 {
     margin-top: 40px;
+    width: 100%;
   }
 }
 
@@ -12111,6 +12112,21 @@ figure .gallery-card .gallery-card-row2 li {
 
 .author .author-books li:last-child {
   margin-right: 0px;
+}
+
+.contact h3, .contact .h3 {
+  font-size: 60px;
+  line-height: 1.5;
+  color: #524540;
+  padding-top: 80px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 992px) {
+  .contact h3, .contact .h3 {
+    font-size: 40px;
+    padding-top: 40px;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
