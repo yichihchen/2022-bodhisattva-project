@@ -170,23 +170,22 @@ figure{
         position: relative;
         width: 100%;
         height: 480px; //寬度其實是476px
+        
     }
     .author-bg{
         position: absolute;
         background:#F6E1DC;
         top: 0;
-        left:0;
+        left:5%;
         right:0;
         height: 100%;
         z-index:-1;
         border-radius: 2rem 0 0 2rem;
-
     }
     h3{
         font-size: 60px;
         line-height: 1.5;
         color:$base;
-        margin-bottom: 16px;
         margin-left: 97px;
         font-weight: 500;
         position: relative;
