@@ -83,23 +83,27 @@ current: index
     <div class="author-bg"></div>
     <!--膚色背景-->
     <h3 class="">作者介紹</h3>
-    <div class="author-intro d-flex justify-content-center">
-      <ul class="author-intro-1 mt-4">
+    <div class="author-intro d-flex">
+      <!--響應式在html,多了一個 justify-content-center為了要讓author-brief2置中???-->
+      <!--三個div的父層-->
+      <ul class="author-brief mt-4 d-flex flex-column align-items-sm-center align-items-md-start">
         <li>林孟蓉，台灣學者，哲學博士。</li>
         <li>福建省莆田學院媽祖文化研究院副教授</li>
         <li>福建省社科研究基地莆田學院媽祖文化研究中心副研究員</li>
         <li>主修東方人文思想</li>
         <li>禪宗哲學、禪宗美學、宗教哲學、</li>
         <li>佛教文獻學、佛典目錄學等。</li>
-        <li class="author-icon-list d-flex">
+        <li class="author-icon d-flex justify-content-center justify-content-md-start">
           <a href="#"><img class="author-icon-wechat" src="../assets/images/wechat.png" alt="wechat"></a>
           <a href="#"><img class="author-icon-email" src="../assets/images/email.png" alt="email"></a>
           <a href="#"><img class="author-icon-line" src="../assets/images/line.png" alt="line"></a>
         </li>
         <!--icon-->
       </ul>
-      <div class="author-pic ms-4"><img src="../assets/images/大頭照-266259.jpg" alt="author-pic"></div>
-      <div class="author-intro-2">
+      <div class="author-pic text-center text-md-start">
+        <img src="../assets/images/大頭照-266259.jpg" alt="author-pic">
+      </div>
+      <div class="author-brief2">
         <h4 class="mb-3">著作</h4>
         <ul class="author-books">
           <li>人間妙音</li>

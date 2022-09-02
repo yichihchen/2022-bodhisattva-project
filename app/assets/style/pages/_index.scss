@@ -166,21 +166,25 @@ figure{
 }
 
 .author{
+    
     .container{
-        position: relative;
-        width: 100%;
-        height: 480px; //寬度其實是476px
-        
+        position: relative;       
+         //寬度其實是476px        
     }
     .author-bg{
         position: absolute;
         background:#F6E1DC;
         top: 0;
-        left:5%;
+        left:2%;
         right:0;
         height: 100%;
         z-index:-1;
         border-radius: 2rem 0 0 2rem;
+        @include iphone(){
+            left: 0;
+            border-radius:0 0 2rem 2rem;
+        }
+          
     }
     h3{
         font-size: 60px;
@@ -189,10 +193,11 @@ figure{
         margin-left: 97px;
         font-weight: 500;
         position: relative;
-        top:-45px;
+        top:-45px;//改position推擠單位??%可以嗎?
         left:0;
         @include pad(){
             font-size: 40px;
+            top:-35px;
         }
     }
     h4{
@@ -204,37 +209,87 @@ figure{
             font-size: 24px;
         }
     }
-    .author-intro-1{
+    .author-intro{
+        padding-bottom: 66px;
+        @media(max-width:768px){
+            width: 100%;  
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .author-brief{
         line-height: 1.5;
         margin-left: 97px;
+        @media(max-width:768px){
+            width: 100%;
+            margin-left: 0px;
+            li{
+            text-align:left ;
+        }
+        }
     }
+    
     .author-pic{
-        margin-right: 122px;
+        margin-right: 80px; //圖像右側距離
+        @include pad(){
+            margin-right: 60px;
+        }
+        @media(max-width:768px){
+            width: 100% ;
+            margin: 80px 0 0 0; //抵掉html ms-4
+        }
+        @include iphone(){
+            width: 239px;
+            height: 233px;
+        }
         img{
         border-radius: 50%;
         }
      }
-     .author-books{
-        writing-mode: vertical-lr;
-     }
-     .author-icon-list{
+    
+     .author-icon{
         margin-top: 56px;
+        @media(max-width:768px){
+            margin-top: 40px;
+        }
      }
      .author-icon-wechat,.author-icon-email,.author-icon-line{
         width: 60px;
         height: 60px;
+        @include pad(){
+            width: 56px;
+            height: 56px;
+        }
      }
      .author-icon-wechat{
         margin-right: 40px;
+        @include pad(){
+            margin-right: 24px;
+        }
      }
      .author-icon-email{
         margin-right: 40px;
+        @include pad(){
+            margin-right: 24px;
+        }
+     }
+     .author-brief2{
+        @media(max-width:768px){
+            margin-top: 40px;
+        }
+    }
+     .author-books{
+        writing-mode: vertical-lr;
      }
      .author-books{
         li{
            font-size: 24px;
-           margin-right: 40px;        
+           margin-right: 40px; 
+           @include iphone(){
+            margin-right: 24px;
+           }      
          }
+      
          li:last-child{
             margin-right: 0px;  
          }
