@@ -11943,7 +11943,7 @@ figure .gallery-card .gallery-card-row2 li {
   position: absolute;
   background: #F6E1DC;
   top: 0;
-  left: 0;
+  left: 5%;
   right: 0;
   height: 100%;
   z-index: -1;
@@ -11954,7 +11954,6 @@ figure .gallery-card .gallery-card-row2 li {
   font-size: 60px;
   line-height: 1.5;
   color: #524540;
-  margin-bottom: 16px;
   margin-left: 97px;
   font-weight: 500;
   position: relative;
