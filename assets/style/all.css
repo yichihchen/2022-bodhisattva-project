@@ -11702,6 +11702,13 @@ img {
   }
 }
 
+footer {
+  background: #701921;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .banner {
   background-repeat: no-repeat;
   background-position: center center;
@@ -12114,6 +12121,10 @@ figure .gallery-card .gallery-card-row2 li {
   margin-right: 0px;
 }
 
+.contact {
+  padding-bottom: 180px;
+}
+
 .contact h3, .contact .h3 {
   font-size: 60px;
   line-height: 1.5;
@@ -12127,6 +12138,18 @@ figure .gallery-card .gallery-card-row2 li {
     font-size: 40px;
     padding-top: 40px;
   }
+}
+
+.contact .btn {
+  background-color: #524540;
+}
+
+.contact .btn:hover {
+  opacity: 0.8;
+}
+
+.contact .contact-button {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=all.css.map */
