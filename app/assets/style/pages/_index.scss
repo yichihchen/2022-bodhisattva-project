@@ -298,6 +298,7 @@ figure{
 } 
 
 .contact{
+    padding-bottom: 180px;
     h3{
         font-size: 60px;
         line-height: 1.5;
@@ -308,5 +309,14 @@ figure{
             font-size: 40px;
             padding-top: 40px;
         }
+    }
+    .btn{
+        background-color: $base;
+        &:hover{
+            opacity: 0.8; //更改hover樣式
+        }
+    }
+    .contact-button{
+        margin-top: 40px;
     }
 }
