@@ -11659,54 +11659,90 @@ img {
   background-color: #F6E1DC80;
 }
 
-.heaader-menu .logo-bodhi {
+.header .heaader-menu .heaader-menu-logo:hover {
+  -webkit-transform: scale(1.02, 1.02);
+      -ms-transform: scale(1.02, 1.02);
+          transform: scale(1.02, 1.02);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header .heaader-menu .logo-bodhi {
   width: 54px;
   height: 76px;
 }
 
 @media (max-width: 992px) {
-  .heaader-menu .logo-bodhi {
+  .header .heaader-menu .logo-bodhi {
     width: 48px;
     height: 68px;
   }
 }
 
 @media (max-width: 992px) {
-  .heaader-menu h1, .heaader-menu .h1 {
+  .header .heaader-menu h1, .header .heaader-menu .h1 {
     display: none;
   }
 }
 
-.heaader-menu .header-menu-group li {
+.header .heaader-menu .header-menu-group li {
   padding: 32px 0px;
 }
 
-.heaader-menu .header-menu-group li a {
+.header .heaader-menu .header-menu-group li:hover {
+  font-weight: bold;
+}
+
+.header .heaader-menu .header-menu-group li:hover:last-child {
+  font-weight: normal;
+}
+
+.header .heaader-menu .header-menu-group li a {
   color: #524540;
 }
 
-.heaader-menu .header-menu-group li .contact-button {
+.header .heaader-menu .header-menu-group li .contact-button {
   color: white;
   background-color: #524540;
   padding: 6px 24px;
   border-radius: 100px;
 }
 
-.heaader-menu .menu-hamburger {
+.header .heaader-menu .menu-hamburger {
   display: none;
 }
 
 @media (max-width: 576px) {
-  .heaader-menu .menu-hamburger {
+  .header .heaader-menu .menu-hamburger {
     display: block;
+    position: relative;
   }
 }
 
-footer {
-  background: #701921;
-  color: white;
-  font-size: 16px;
-  line-height: 1.5;
+.header .heaader-menu .menu-hamburger .menu-hamburger-close {
+  display: none;
+}
+
+.mobile-menu {
+  background: #F6E1DC80;
+  display: none !important;
+}
+
+.mobile-menu a {
+  color: #524540;
+  padding: 4px 0;
+  display: block;
+}
+
+.mobile-menu a:hover {
+  background-color: #e1c8c2f8;
+}
+
+@media (max-width: 576px) {
+  .mobile-menu.active {
+    display: block !important;
+  }
 }
 
 .banner {
