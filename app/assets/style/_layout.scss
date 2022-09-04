@@ -1,47 +1,89 @@
 //header
-.header{
+.header {
     background-color: #F6E1DC80;
-}
-.heaader-menu{
-.logo-bodhi{
-    width: 54px;
-    height: 76px;
-   @include pad(){
-    width: 48px;
-    height: 68px;
-   }
-}
-h1{
-    @include pad(){
-        display: none;
+
+    .heaader-menu {
+        .heaader-menu-logo {
+            &:hover {
+                transform: scale(1.02, 1.02);
+                transition: 0.2s;
+            }
+        }
+
+        .logo-bodhi {
+            width: 54px;
+            height: 76px;
+
+            @include pad() {
+                width: 48px;
+                height: 68px;
+            }
+        }
+
+        h1 {
+            @include pad() {
+                display: none;
+            }
+        }
+
+        .header-menu-group {
+            li {
+                padding: 32px 0px;
+
+                &:hover {
+                    font-weight: bold;
+
+                    &:last-child {
+                        font-weight: normal;
+                    }
+                    //last-child不要bold
+                }
+
+                a {
+                    color: $base;
+                }
+
+                .contact-button {
+                    color: white;
+                    background-color: $base;
+                    padding: 6px 24px;
+                    border-radius: 100px;
+                }
+            }
+
+        }
+
+        .menu-hamburger {
+            display: none;
+
+            @include iphone() {
+                display: block;
+                position: relative;
+            }
+
+            .menu-hamburger-close {
+                display: none; //還是搞不清楚position:absolute; 兩個icon怎麼重疊?
+            }
+        }
     }
+
+
 }
-.header-menu-group{
-    li{
-        padding: 32px 0px;
+
+.mobile-menu {
+    background: #F6E1DC80;
+    display: none !important;
         a{
-         color:$base;
+            color:$base;
+            padding: 4px 0;
+            display: block;
+            &:hover{
+                background-color:#e1c8c2f8 ;
+            }
         }
-        .contact-button{
-            color:white;
-            background-color: $base;
-            padding: 6px 24px;
-            border-radius: 100px;
+    @include iphone() {
+        &.active {
+            display: block !important;
         }
     }
- 
-}
-.menu-hamburger{
-    display: none;
-    @include iphone(){
-        display: block;
-    }
-}
-}
-//footer
-footer{
-    background:$primary;
-    color: white;
-    font-size: 16px;
-    line-height: 1.5;
 }
