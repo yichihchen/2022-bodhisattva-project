@@ -1,9 +1,12 @@
 
-.exhibit{
+
     .sidebar{
       width: 15%;
+      @include pad(){
+        display: none;
+      }
     }
-}
+  
 .monk{
     width: 85%; //要設定不然會擠壓到sidebar
     .monk-pics{
@@ -11,10 +14,19 @@
             width: 180px;
             height: 333px;
         }
+        li{
+            line-height: 1.2; //文字方塊行高1.2
+            width: 260px; //文字方塊寬度改260px
+        }
     }
     .monk-content{
         width: 260px;
+        .flower{
+            width: 36px;
+            height: 36px;
+        }
     }
+   
 }
 
 .podocarpus{  //羅漢松
@@ -24,22 +36,30 @@
         line-height: 1.5;
         margin-bottom: 32px;
     }
-    .podocarpus-pic1{
-        margin: 80px 0px;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-right: 64px;
+    .podocarpus-item1{
+        margin: 80px 64px 80px 0px;
+        flex-shrink: 0; //父層加了這個img不會被flex擠壓
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+           
+        }
     }
-    .podocarpus-pic2 {
-        margin: 80px 0px;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-left: 64px; 
+    .podocarpus-item2{
+        margin: 80px 0px 80px 64px;
+        flex-shrink: 0; //父層加了這個img不會被flex擠壓
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
     }
+    
     .podocarpus-content{
-        margin-top: 80px;
+        margin: 80px 0px;
     }
 
 }

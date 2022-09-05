@@ -31,12 +31,8 @@
                 padding: 32px 0px;
 
                 &:hover {
-                    font-weight: bold;
-
-                    &:last-child {
-                        font-weight: normal;
-                    }
-                    //last-child不要bold
+                    transform: scale(1.05, 1.05);
+                    transition: 0.2s;
                 }
 
                 a {
@@ -49,7 +45,7 @@
                     padding: 6px 24px;
                     border-radius: 100px;
                     &:hover{
-                        opacity: 0.7;
+                        opacity: 0.8;
                     }
                 }
             }
