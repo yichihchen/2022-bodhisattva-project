@@ -11693,11 +11693,12 @@ img {
 }
 
 .header .heaader-menu .header-menu-group li:hover {
-  font-weight: bold;
-}
-
-.header .heaader-menu .header-menu-group li:hover:last-child {
-  font-weight: normal;
+  -webkit-transform: scale(1.05, 1.05);
+      -ms-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .header .heaader-menu .header-menu-group li a {
@@ -11712,7 +11713,7 @@ img {
 }
 
 .header .heaader-menu .header-menu-group li .contact-button:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .header .heaader-menu .menu-hamburger {
@@ -12258,8 +12259,14 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
   margin-top: 40px;
 }
 
-.exhibit .sidebar {
+.sidebar {
   width: 15%;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 .monk {
@@ -12271,8 +12278,18 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
   height: 333px;
 }
 
+.monk .monk-pics li {
+  line-height: 1.2;
+  width: 260px;
+}
+
 .monk .monk-content {
   width: 260px;
+}
+
+.monk .monk-content .flower {
+  width: 36px;
+  height: 36px;
 }
 
 .podocarpus {
@@ -12285,24 +12302,36 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
   margin-bottom: 32px;
 }
 
-.podocarpus .podocarpus-pic1 {
-  margin: 80px 0px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-right: 64px;
+.podocarpus .podocarpus-item1 {
+  margin: 80px 64px 80px 0px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
-.podocarpus .podocarpus-pic2 {
-  margin: 80px 0px;
+.podocarpus .podocarpus-item1 img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin-left: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.podocarpus .podocarpus-item2 {
+  margin: 80px 0px 80px 64px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.podocarpus .podocarpus-item2 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .podocarpus .podocarpus-content {
-  margin-top: 80px;
+  margin: 80px 0px;
 }
 
 /*# sourceMappingURL=all.css.map */
