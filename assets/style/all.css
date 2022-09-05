@@ -11646,12 +11646,14 @@ img {
 @media (max-width: 992px) {
   .container {
     max-width: 992px;
+    padding: 0 24px;
   }
 }
 
 @media (max-width: 576px) {
   .container {
     max-width: 576px;
+    padding: 0 24px;
   }
 }
 
@@ -11707,6 +11709,10 @@ img {
   background-color: #524540;
   padding: 6px 24px;
   border-radius: 100px;
+}
+
+.header .heaader-menu .header-menu-group li .contact-button:hover {
+  opacity: 0.7;
 }
 
 .header .heaader-menu .menu-hamburger {
@@ -11944,6 +11950,28 @@ figure .gallery-card .gallery-card-row1 li {
   }
 }
 
+figure .gallery-card .gallery-card-row1 li a:hover {
+  opacity: 0.7;
+}
+
+figure .gallery-card .gallery-card-row1 li a:hover h4, figure .gallery-card .gallery-card-row1 li a:hover .h4 {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+figure .gallery-card .gallery-card-row1 li a:hover img {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @media (max-width: 576px) {
   figure .gallery-card .gallery-card-row1 img {
     margin-bottom: 26px;
@@ -11968,6 +11996,28 @@ figure .gallery-card .gallery-card-row2 li {
   figure .gallery-card .gallery-card-row2 li {
     width: 100%;
   }
+}
+
+figure .gallery-card .gallery-card-row2 li a:hover {
+  opacity: 0.7;
+}
+
+figure .gallery-card .gallery-card-row2 li a:hover h4, figure .gallery-card .gallery-card-row2 li a:hover .h4 {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+figure .gallery-card .gallery-card-row2 li a:hover img {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 576px) {
@@ -12017,10 +12067,9 @@ figure .gallery-card .gallery-card-row2 li {
 }
 
 .author h4, .author .h4 {
-  font-size: 40px;
+  font-size: 36px;
   color: #524540;
   line-height: 1.5;
-  border-bottom: 4px solid #701921;
 }
 
 @media (max-width: 992px) {
@@ -12091,19 +12140,33 @@ figure .gallery-card .gallery-card-row2 li {
   margin-top: 56px;
 }
 
+.author .author-icon a:hover {
+  opacity: 0.7;
+}
+
+.author .author-icon a:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
   .author .author-icon {
     margin-top: 40px;
   }
 }
 
-.author .author-icon-wechat, .author .author-icon-email, .author .author-icon-line {
+.author .author-icon-wechat,
+.author .author-icon-email,
+.author .author-icon-line {
   width: 60px;
   height: 60px;
 }
 
 @media (max-width: 992px) {
-  .author .author-icon-wechat, .author .author-icon-email, .author .author-icon-line {
+  .author .author-icon-wechat,
+  .author .author-icon-email,
+  .author .author-icon-line {
     width: 56px;
     height: 56px;
   }
@@ -12136,7 +12199,8 @@ figure .gallery-card .gallery-card-row2 li {
   }
 }
 
-.author .author-books {
+.author .author-brief2 .author-books {
+  border-top: 4px solid #701921;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -12159,6 +12223,12 @@ figure .gallery-card .gallery-card-row2 li {
 
 .contact {
   padding-bottom: 180px;
+}
+
+@media (max-width: 576px) {
+  .contact {
+    padding-bottom: 86px;
+  }
 }
 
 .contact h3, .contact .h3 {
@@ -12186,6 +12256,53 @@ figure .gallery-card .gallery-card-row2 li {
 
 .contact .contact-button {
   margin-top: 40px;
+}
+
+.exhibit .sidebar {
+  width: 15%;
+}
+
+.monk {
+  width: 85%;
+}
+
+.monk .monk-pics img {
+  width: 180px;
+  height: 333px;
+}
+
+.monk .monk-content {
+  width: 260px;
+}
+
+.podocarpus {
+  background: #F6E1DC;
+}
+
+.podocarpus h4, .podocarpus .h4 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.podocarpus .podocarpus-pic1 {
+  margin: 80px 0px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 64px;
+}
+
+.podocarpus .podocarpus-pic2 {
+  margin: 80px 0px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 64px;
+}
+
+.podocarpus .podocarpus-content {
+  margin-top: 80px;
 }
 
 /*# sourceMappingURL=all.css.map */
