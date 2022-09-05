@@ -1,163 +1,225 @@
-.banner{
+.banner {
     @include picture();
     background: linear-gradient(0deg, rgba(246, 225, 220, 0.5), rgba(246, 225, 220, 0.5)), url(../images/雲朵_確定.jpg);
 
-    h3{
+    h3 {
         font-size: 60px;
         line-height: 1.5;
-        color:$base;
+        color: $base;
         padding-top: 60px;
         margin-bottom: 36px;
-        @include pad(){
+
+        @include pad() {
             font-size: 40px;
             padding-top: 40px;
             margin-bottom: 40px;
         }
-       }
-    .banner-origin-list{
-        @include pad(){
+    }
+
+    .banner-origin-list {
+        @include pad() {
             flex-wrap: wrap;
             justify-content: center;
             text-align: center;
         }
     }
-    .banner-origin{       
-        .banner-origin-story1{   
-        width: 267px;
-        height: 267px;     
-        object-fit: cover;
-        border-radius: 50%;
-        margin-left:97px ;
-        margin-right: 121px;
-        @include pad(){
-            width: 240px;
-            height: 240px; 
-            margin: 0px 68px;
 
-        }
-       }       
-      .banner-origin-story2{   
-        width: 267px;
-        height: 267px;     
-        object-fit: cover;
-        border-radius: 50%;
-        margin-right:97px ;
-        margin-left: 121px;
-        @include pad(){
-            width: 240px;
-            height: 240px;
-            margin: 0px 68px; 
-        }
-        }
-    .banner-origin-words1{
-        margin-bottom: 66px;
-        @include pad(){
-            margin-bottom: 60px;
-        }
-        h2{
-            font-size: 40px;
-            color:$base;
-            line-height: 1.5;
-            @include pad(){
-                margin-top: 40px;
-                font-size: 24px;
+    .banner-origin {
+        .banner-origin-story1 {
+            width: 267px;
+            height: 267px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-left: 97px;
+            margin-right: 121px;
+
+            @include pad() {
+                width: 240px;
+                height: 240px;
+                margin: 0px 68px;
+
             }
         }
-        p{  
-            color:$base;
-            line-height: 1.5;
-            width: 85%;
-            @include pad(){
-                width: 100%;
+
+        .banner-origin-story2 {
+            width: 267px;
+            height: 267px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 97px;
+            margin-left: 121px;
+
+            @include pad() {
+                width: 240px;
+                height: 240px;
+                margin: 0px 68px;
             }
-        }        
         }
-    .banner-origin-words2{
-        margin-bottom: 162px;
-        margin-left: 97px;
-        @include pad(){
-            margin-bottom: 120px;
-            margin-left:0px;
+
+        .banner-origin-words1 {
+            margin-bottom: 66px;
+
+            @include pad() {
+                margin-bottom: 60px;
+            }
+
+            h2 {
+                font-size: 40px;
+                color: $base;
+                line-height: 1.5;
+
+                @include pad() {
+                    margin-top: 40px;
+                    font-size: 24px;
+                }
+            }
+
+            p {
+                color: $base;
+                line-height: 1.5;
+                width: 85%;
+
+                @include pad() {
+                    width: 100%;
+                }
+            }
         }
-        h2{
-            font-size: 40px;
-            color:$base;
-            line-height: 1.5;
-            @include pad(){
-                margin-top: 40px;
-                font-size: 24px;
+
+        .banner-origin-words2 {
+            margin-bottom: 162px;
+            margin-left: 97px;
+
+            @include pad() {
+                margin-bottom: 120px;
+                margin-left: 0px;
             }
+
+            h2 {
+                font-size: 40px;
+                color: $base;
+                line-height: 1.5;
+
+                @include pad() {
+                    margin-top: 40px;
+                    font-size: 24px;
+                }
             }
-        p{  
-            color:$base;
-            line-height: 1.5;
-            width: 85%;
-            @include pad(){
-                width: 100%;
+
+            p {
+                color: $base;
+                line-height: 1.5;
+                width: 85%;
+
+                @include pad() {
+                    width: 100%;
+                }
             }
-        }        
         }
-     }
+    }
 }
-figure{
-    h3{
+
+figure {
+    h3 {
         font-size: 60px;
         line-height: 1.5;
-        color:$base;
+        color: $base;
         padding-top: 80px;
         margin-bottom: 16px;
-        @include pad(){
+
+        @include pad() {
             font-size: 40px;
             padding-top: 40px;
         }
     }
-    p{
-        color:$base;
+
+    p {
+        color: $base;
         font-size: 24px;
         margin-bottom: 124px;
-        @include pad(){
+
+        @include pad() {
             font-size: 16px;
             margin-bottom: 44px;
         }
     }
-    .gallery-card{
-        
-        h4{
+
+    .gallery-card {
+        h4 {
             font-size: 40px;
-            color:$base;
+            color: $base;
             line-height: 1.5;
             border-bottom: 4px solid $primary;
-            @include pad(){
+
+            @include pad() {
                 font-size: 24px;
             }
         }
-        .gallery-card-row1{
+
+        .gallery-card-row1 {
             margin-bottom: 76px;
-            li{
+
+            li {
                 width: calc((100% - 48px) / 3);
-                @include iphone(){
-                    width:100%;
+
+                @include iphone() {
+                    width: 100%;
+                }
+
+                a {
+                    &:hover {
+                        opacity: 0.7;
+
+                        h4 {
+                            transform: scale(1.03);
+                            transition: 0.5s;
+                        }
+                        img{
+                            transform: scale(1.03);
+                            transition: 0.5s;
+                        }
+                    }
+
+                    //hover無法動,除非h4和img一起下transform
                 }
             }
-            img{
-                @include iphone(){
-                    margin-bottom: 26px; 
+
+            img {
+                @include iphone() {
+                    margin-bottom: 26px;
                 }
             }
         }
-        .gallery-card-row2{
+
+        .gallery-card-row2 {
             margin-bottom: 124px;
-            @include iphone(){
+
+            @include iphone() {
                 margin-bottom: 80px;
             }
-            li{
-            width: calc((100% - 315px) / 2 );
-            @include iphone(){
-                width: 100%;
+
+            li {
+                width: calc((100% - 315px) / 2);
+
+                @include iphone() {
+                    width: 100%;
+                }
+                a{
+                    &:hover{
+                        opacity: 0.7;
+                        h4 {
+                            transform: scale(1.03);
+                            transition: 0.5s;
+                        }
+                        img{
+                            transform: scale(1.03);
+                            transition: 0.5s;
+                        }
+                    }
+                }
             }
-            }
-            .gallery-card-pic4{
-                @include iphone(){
+
+            .gallery-card-pic4 {
+                @include iphone() {
                     margin-bottom: 26px;
                 }
             }
@@ -165,158 +227,204 @@ figure{
     }
 }
 
-.author{
-    
-    .container{
-        position: relative;       
-         //寬度其實是476px        
+.author {
+
+    .container {
+        position: relative;
+        //寬度其實是476px        
     }
-    .author-bg{
+
+    .author-bg {
         position: absolute;
-        background:#F6E1DC;
+        background: #F6E1DC;
         top: 0;
-        left:2%;
-        right:0;
+        left: 2%;
+        right: 0;
         height: 100%;
-        z-index:-1;
+        z-index: -1;
         border-radius: 2rem 0 0 2rem;
-        @include iphone(){
+
+        @include iphone() {
             left: 0;
-            border-radius:0 0 2rem 2rem;
+            border-radius: 0 0 2rem 2rem;
         }
-          
+
     }
-    h3{
+
+    h3 {
         font-size: 60px;
         line-height: 1.5;
-        color:$base;
+        color: $base;
         margin-left: 97px;
         font-weight: 500;
         position: relative;
-        top:-45px;//改position推擠單位??%可以嗎?
-        left:0;
-        @include pad(){
+        top: -45px; //改position推擠單位??%可以嗎?
+        left: 0;
+
+        @include pad() {
             font-size: 40px;
-            top:-35px;
+            top: -35px;
         }
     }
-    h4{
-        font-size: 40px;
-        color:$base;
+
+    h4 {                                //著作，需要在手機板改位置
+        font-size: 36px;
+        color: $base;
         line-height: 1.5;
-        border-bottom: 4px solid $primary;
-        @include pad(){
+        
+        @include pad() {
             font-size: 24px;
         }
     }
-    .author-intro{
+
+    .author-intro {
         padding-bottom: 66px;
-        @media(max-width:768px){
-            width: 100%;  
+
+        @media(max-width:768px) {
+            width: 100%;
             flex-wrap: wrap;
             justify-content: center;
         }
     }
-    .author-brief{
+
+    .author-brief {
         line-height: 1.5;
         margin-left: 97px;
-        @media(max-width:768px){
+
+        @media(max-width:768px) {
             width: 100%;
             margin-left: 0px;
-            li{
-            text-align:left ;
-        }
+
+            li {
+                text-align: left;
+            }
         }
     }
-    
-    .author-pic{
+
+    .author-pic {
         margin-right: 80px; //圖像右側距離
-        @include pad(){
+
+        @include pad() {
             margin-right: 60px;
         }
-        @media(max-width:768px){
+
+        @media(max-width:768px) {
             width: 100%;
             margin: 80px 0 0 0; //抵掉html ms-4
         }
-        @include iphone(){
+
+        @include iphone() {
             width: 239px;
             height: 233px;
         }
-        img{
-        border-radius: 50%;
+
+        img {
+            border-radius: 50%;
         }
-     }
-    
-     .author-icon{
+    }
+
+    .author-icon {
         margin-top: 56px;
-        @media(max-width:768px){
+        a{
+            &:hover{
+                opacity: 0.7;
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        @media(max-width:768px) {
             margin-top: 40px;
         }
-     }
-     .author-icon-wechat,.author-icon-email,.author-icon-line{
+    }
+
+    .author-icon-wechat,
+    .author-icon-email,
+    .author-icon-line {
         width: 60px;
         height: 60px;
-        @include pad(){
+
+        @include pad() {
             width: 56px;
             height: 56px;
         }
-     }
-     .author-icon-wechat{
+    }
+
+    .author-icon-wechat {
         margin-right: 40px;
-        @include pad(){
+
+        @include pad() {
             margin-right: 24px;
-        }
-     }
-     .author-icon-email{
-        margin-right: 40px;
-        @include pad(){
-            margin-right: 24px;
-        }
-     }
-     .author-brief2{
-        @media(max-width:768px){
-            margin-top: 40px;
-            width: 100%; //border要重新調整
         }
     }
-     .author-books{
-        writing-mode: vertical-lr;
-     }
-     .author-books{
-        li{
-           font-size: 24px;
-           margin-right: 40px; 
-           @include iphone(){
-            margin-right: 24px;
-           }      
-         }
-      
-         li:last-child{
-            margin-right: 0px;  
-         }
-        }
-} 
 
-.contact{
+    .author-icon-email {
+        margin-right: 40px;
+
+        @include pad() {
+            margin-right: 24px;
+        }
+    }
+
+    .author-brief2 {
+        
+        @media(max-width:768px) {
+            margin-top: 40px;
+            width: 100%;
+        }
+        .author-books {
+            border-top: 4px solid $primary;
+            writing-mode: vertical-lr;
+            
+        }
+    }
+
+    
+
+    .author-books {
+        li {
+            font-size: 24px;
+            margin-right: 40px;
+
+            @include iphone() {
+                margin-right: 24px;
+            }
+        }
+
+        li:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+.contact {
     padding-bottom: 180px;
-    h3{
+    @include iphone(){
+        padding-bottom: 86px;
+    }
+
+    h3 {
         font-size: 60px;
         line-height: 1.5;
-        color:$base;
+        color: $base;
         padding-top: 80px;
         margin-bottom: 16px;
-        @include pad(){
+
+        @include pad() {
             font-size: 40px;
             padding-top: 40px;
         }
     }
-    .btn{
+
+    .btn {
         background-color: $base;
-        &:hover{
+
+        &:hover {
             opacity: 0.8; //更改hover樣式
         }
     }
-    .contact-button{
+
+    .contact-button {
         margin-top: 40px;
     }
 }

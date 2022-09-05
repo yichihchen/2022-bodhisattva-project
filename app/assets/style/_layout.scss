@@ -48,6 +48,9 @@
                     background-color: $base;
                     padding: 6px 24px;
                     border-radius: 100px;
+                    &:hover{
+                        opacity: 0.7;
+                    }
                 }
             }
 

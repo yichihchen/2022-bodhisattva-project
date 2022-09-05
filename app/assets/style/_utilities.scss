@@ -14,9 +14,11 @@ img {
 
     @include pad(){
         max-width:992px; //padding要設定
+        padding: 0 24px;
     }
 
     @include iphone(){
         max-width:576px; //padding要設定
+        padding: 0 24px;
     }
   }

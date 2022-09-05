@@ -1,0 +1,45 @@
+
+.exhibit{
+    .sidebar{
+      width: 15%;
+    }
+}
+.monk{
+    width: 85%; //要設定不然會擠壓到sidebar
+    .monk-pics{
+        img{
+            width: 180px;
+            height: 333px;
+        }
+    }
+    .monk-content{
+        width: 260px;
+    }
+}
+
+.podocarpus{  //羅漢松
+    background: #F6E1DC;
+    h4{
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+    }
+    .podocarpus-pic1{
+        margin: 80px 0px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 64px;
+    }
+    .podocarpus-pic2 {
+        margin: 80px 0px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-left: 64px; 
+    }
+    .podocarpus-content{
+        margin-top: 80px;
+    }
+
+}
