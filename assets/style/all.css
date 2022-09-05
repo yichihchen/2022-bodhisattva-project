@@ -12273,9 +12273,34 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
   width: 85%;
 }
 
+@media (max-width: 992px) {
+  .monk {
+    width: 100%;
+  }
+}
+
 .monk .monk-pics img {
   width: 180px;
   height: 333px;
+}
+
+@media (max-width: 992px) {
+  .monk .monk-pics .monk-pics-group li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .monk .monk-pics .monk-pics-group .monk-pics-main {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .monk .monk-pics .monk-pics-group .monk-content {
+    width: 100%;
+  }
 }
 
 .monk .monk-pics li {
