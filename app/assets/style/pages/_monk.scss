@@ -16,7 +16,7 @@
     .monk-pics {
         img {
             width: 180px;
-            height: 333px;
+            height: 333px; //大圖設定
         }
 
         .monk-pics-group {
@@ -25,13 +25,15 @@
                     width: 100%; //RWD變成一個圖片一列
                 }
             }
-           .monk-pics-main{
-            @include iphone() {
-                width: 100%; 
-                text-align: center; //要如何讓它置中???
-                //手機版一個圖片一列
+
+            .monk-pics-main {
+                @include iphone() {
+                    width: 100%;
+                    text-align: center; //要如何讓它置中???
+                    //手機版一個圖片一列
+                }
             }
-           }
+
             .monk-content {
                 @include iphone() {
                     width: 100%; //手機版一個圖片一列
@@ -58,7 +60,7 @@
 
 .podocarpus {
     //羅漢松
-    background: #F6E1DC;
+    background: #f8e9e5;
 
     h4 {
         font-size: 24px;
@@ -70,12 +72,21 @@
         margin: 80px 64px 80px 0px;
         flex-shrink: 0; //父層加了這個img不會被flex擠壓
 
+        @media(max-width:768px) {
+            width: 100%;
+            margin: 40px 0px 0px 0px;
+        }
+
         img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
 
+            @media(max-width:768px) {
+                width: 250px;
+                height: 250px;
+            }
         }
     }
 
@@ -83,16 +94,77 @@
         margin: 80px 0px 80px 64px;
         flex-shrink: 0; //父層加了這個img不會被flex擠壓
 
+        @media(max-width:768px) {
+            width: 100%;
+            margin: 40px 0px 40px 0px;
+        }
+
         img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
+
+            @media(max-width:768px) {
+                width: 250px;
+                height: 250px;
+            }
         }
     }
 
     .podocarpus-content {
         margin: 80px 0px;
+
+        @media(max-width:768px) {
+            margin: 40px 0px;
+        }
     }
 
+}
+
+//monk-second-pics
+.monk-second-pics {
+    width: 85%; //要設定不然會擠壓到sidebar
+
+    @include pad() {
+        width: 100%; //讓sidebar欄消失後置中
+    }
+
+    .monk-pics-main {
+        width: 180px;
+        height: 333px; //大圖設定
+    }
+
+    .monk-content {
+        width: 260px;
+
+        .flower {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
+//盂蘭法會豆知識
+.obon{
+    h4 {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+    }
+    background:  #faf0e6;
+    .obon-item2{
+        flex-shrink: 0;
+        margin: 80px 0px 80px 64px;
+        
+        @media(max-width:768px) {
+            width: 100%;
+            margin: 40px 0px 0px 0px; //RWD
+        }
+    }
+    .obon-pic2{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 }
