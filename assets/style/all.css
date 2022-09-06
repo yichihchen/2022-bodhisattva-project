@@ -11851,9 +11851,16 @@ img {
   color: #524540;
   line-height: 1.5;
   width: 85%;
+  text-align: left;
 }
 
 @media (max-width: 992px) {
+  .banner .banner-origin .banner-origin-words1 p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
   .banner .banner-origin .banner-origin-words1 p {
     width: 100%;
   }
@@ -11888,6 +11895,7 @@ img {
   color: #524540;
   line-height: 1.5;
   width: 85%;
+  text-align: left;
 }
 
 @media (max-width: 992px) {
@@ -12067,6 +12075,13 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
   }
 }
 
+@media (max-width: 576px) {
+  .author h3, .author .h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
 .author h4, .author .h4 {
   font-size: 36px;
   color: #524540;
@@ -12099,6 +12114,12 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
   margin-left: 97px;
 }
 
+@media (max-width: 992px) {
+  .author .author-brief {
+    margin-left: 24px;
+  }
+}
+
 @media (max-width: 768px) {
   .author .author-brief {
     width: 100%;
@@ -12115,7 +12136,7 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
 
 @media (max-width: 992px) {
   .author .author-pic {
-    margin-right: 60px;
+    margin-right: 36px;
   }
 }
 
@@ -12126,7 +12147,7 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .author .author-pic {
     width: 239px;
     height: 233px;
@@ -12179,7 +12200,7 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
 
 @media (max-width: 992px) {
   .author .author-icon-wechat {
-    margin-right: 24px;
+    margin-right: 16px;
   }
 }
 
@@ -12189,7 +12210,7 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
 
 @media (max-width: 992px) {
   .author .author-icon-email {
-    margin-right: 24px;
+    margin-right: 16px;
   }
 }
 
@@ -12210,6 +12231,12 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
 .author .author-books li {
   font-size: 24px;
   margin-right: 40px;
+}
+
+@media (max-width: 992px) {
+  .author .author-books li {
+    margin-right: 24px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -12318,7 +12345,7 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
 }
 
 .podocarpus {
-  background: #F6E1DC;
+  background: #f8e9e5;
 }
 
 .podocarpus h4, .podocarpus .h4 {
@@ -12333,6 +12360,13 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
       flex-shrink: 0;
 }
 
+@media (max-width: 768px) {
+  .podocarpus .podocarpus-item1 {
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+  }
+}
+
 .podocarpus .podocarpus-item1 img {
   width: 150px;
   height: 150px;
@@ -12341,10 +12375,24 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
      object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .podocarpus .podocarpus-item1 img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 .podocarpus .podocarpus-item2 {
   margin: 80px 0px 80px 64px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .podocarpus .podocarpus-item2 {
+    width: 100%;
+    margin: 40px 0px 40px 0px;
+  }
 }
 
 .podocarpus .podocarpus-item2 img {
@@ -12355,8 +12403,76 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
      object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .podocarpus .podocarpus-item2 img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 .podocarpus .podocarpus-content {
   margin: 80px 0px;
+}
+
+@media (max-width: 768px) {
+  .podocarpus .podocarpus-content {
+    margin: 40px 0px;
+  }
+}
+
+.monk-second-pics {
+  width: 85%;
+}
+
+@media (max-width: 992px) {
+  .monk-second-pics {
+    width: 100%;
+  }
+}
+
+.monk-second-pics .monk-pics-main {
+  width: 180px;
+  height: 333px;
+}
+
+.monk-second-pics .monk-content {
+  width: 260px;
+}
+
+.monk-second-pics .monk-content .flower {
+  width: 36px;
+  height: 36px;
+}
+
+.obon {
+  background: #faf0e6;
+}
+
+.obon h4, .obon .h4 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.obon .obon-item2 {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 80px 0px 80px 64px;
+}
+
+@media (max-width: 768px) {
+  .obon .obon-item2 {
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+  }
+}
+
+.obon .obon-pic2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*# sourceMappingURL=all.css.map */

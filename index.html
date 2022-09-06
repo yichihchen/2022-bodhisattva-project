@@ -61,7 +61,7 @@
   <div class="container">
     <h3 class="text-center">STORY</h3>
     <ul class="banner-origin">
-      <li class="banner-origin-list d-flex">
+      <li class="banner-origin-list d-flex ">
         <img class="banner-origin-story1" src="/assets/images/story-1-square.png" alt="story-1">
         <div class="banner-origin-words1">
           <h2 class="mb-3">大悲咒的由來</h2>
@@ -113,8 +113,7 @@
       <div class="gallery-card-row2 d-flex justify-content-evenly flex-wrap">
         <li>
           <a href="#">
-            <h4 class="mb-3 ">菩薩類</h4><img class="gallery-card-pic4 rounded-2" src="/assets/images/pray.png"
-              alt="pray">
+            <h4 class="mb-3 ">菩薩類</h4><img class="gallery-card-pic4 rounded-2" src="/assets/images/pray.png" alt="pray">
           </a>
         </li>
         <li>
@@ -134,11 +133,13 @@
     <div class="author-bg"></div>
     <!--膚色背景-->
     <h3 class="">作者介紹</h3>
+    <!--RWD沒辦法置中喔-->
     <div class="author-intro d-flex">
       <!--響應式在html,多了一個 justify-content-center為了要讓author-brief2置中???-->
       <!--三個div的父層-->
-      <ul class="author-brief mt-4 d-flex flex-column align-items-sm-center align-items-md-start">
-        <li>林孟蓉，台灣學者，哲學博士。</li>
+      <ul class="author-brief mt-md-4  me-md-4 d-flex flex-column align-items-center align-items-md-start">
+        <!--字無法RWD偏左-->
+        <li class="">林孟蓉，台灣學者，哲學博士。</li>
         <li>福建省莆田學院媽祖文化研究院副教授</li>
         <li>福建省社科研究基地莆田學院媽祖文化研究中心副研究員</li>
         <li>主修東方人文思想</li>
@@ -151,18 +152,23 @@
         </li>
         <!--icon-->
       </ul>
-      <div class="author-pic text-center text-md-start">
+      <div class="author-pic text-center text-md-start flex-shrink-0">
         <img src="/assets/images/大頭照-266259.jpg" alt="author-pic">
       </div>
       <div class="author-brief2 d-flex flex-column align-items-center">
-        <h4 class="align-self-start">著作</h4>  <!--向左靠align-self脫離align-items-center的掌控,避免一直被置中-->
-        <ul class="author-books pt-3">
-          <li >人間妙音</li>
-          <li>明清畫僧集粹與研究</li>
-          <li>觀音三十二像贊之研究</li>
-          <li>觀音慈容</li>
-          <li>禪觀影像論</li>
-        </ul>
+        <div>
+          <!--加這層div為了讓著作RWD可以靠左-->
+          <h4 class="align-self-start">著作</h4>
+          <!--向左靠align-self脫離align-items-center的掌控,避免一直被置中-->
+          <ul class="author-books pt-3">
+            <li>人間妙音</li>
+            <li>明清畫僧集粹與研究</li>
+            <li>觀音三十二像贊之研究</li>
+            <li>觀音慈容</li>
+            <li>禪觀影像論</li>
+          </ul>
+        </div>
+        <!--加這層div為了讓著作RWD可以靠左-end-->
       </div>
     </div>
 
@@ -177,7 +183,7 @@
     </div>
     <div class="row g-0 justify-content-center">
       <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-        
+
         <form>
           <div class="row g-3">
             <div class="col-md-6">
