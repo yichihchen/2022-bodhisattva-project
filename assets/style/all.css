@@ -12332,7 +12332,6 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
 
 .monk .monk-pics li {
   line-height: 1.2;
-  width: 260px;
 }
 
 .monk .monk-content {
@@ -12363,7 +12362,7 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
 @media (max-width: 768px) {
   .podocarpus .podocarpus-item1 {
     width: 100%;
-    margin: 40px 0px 0px 0px;
+    margin: 60px 0px 0px 0px;
   }
 }
 
@@ -12391,7 +12390,7 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
 @media (max-width: 768px) {
   .podocarpus .podocarpus-item2 {
     width: 100%;
-    margin: 40px 0px 40px 0px;
+    margin: 32px 0px 40px 0px;
   }
 }
 
@@ -12416,7 +12415,7 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
 
 @media (max-width: 768px) {
   .podocarpus .podocarpus-content {
-    margin: 40px 0px;
+    margin: 40px 0px 24px 0px;
   }
 }
 
@@ -12454,6 +12453,17 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
   margin-bottom: 32px;
 }
 
+.obon .obon-content {
+  width: 65%;
+}
+
+@media (max-width: 768px) {
+  .obon .obon-content {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
 .obon .obon-item2 {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -12463,7 +12473,7 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
 @media (max-width: 768px) {
   .obon .obon-item2 {
     width: 100%;
-    margin: 40px 0px 0px 0px;
+    margin: 40px 0px;
   }
 }
 
@@ -12473,6 +12483,13 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .obon .obon-pic2 {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
