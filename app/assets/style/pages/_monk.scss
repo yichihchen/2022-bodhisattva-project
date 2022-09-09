@@ -20,40 +20,37 @@
         }
 
         .monk-pics-group {
+            .monk-pics-main {
+                @include iphone() {
+                    margin: 0 !important;
+                }
+            }
+
             li {
                 @include pad() {
                     width: 100%; //RWD變成一個圖片一列
                 }
             }
 
-            .monk-pics-main {
-                @include iphone() {
-                    width: 100%;
-                    text-align: center; //要如何讓它置中???
-                    //手機版一個圖片一列
-                }
-            }
-
             .monk-content {
+                width: 260px;
+
                 @include iphone() {
                     width: 100%; //手機版一個圖片一列
+                }
+
+                .flower {
+                    width: 36px;
+                    height: 36px;
                 }
             }
         }
 
         li {
             line-height: 1.2; //文字方塊行高1.2
-            
-        }
-    }
 
-    .monk-content {
-        width: 260px;
-
-        .flower {
-            width: 36px;
-            height: 36px;
         }
+
     }
 
 }
@@ -133,10 +130,22 @@
     .monk-pics-main {
         width: 180px;
         height: 333px; //大圖設定
+
+        @include iphone() {
+            margin: 0 !important;
+        }
     }
 
-    .monk-content {
-        width: 260px;
+    .monk-pics-group {
+        .monk-content {
+            //文字寬度
+            width: 260px;
+
+            @include iphone() {
+                width: 100%;
+            }
+           
+        }
 
         .flower {
             width: 36px;
@@ -144,36 +153,42 @@
         }
     }
 }
+
 //盂蘭法會豆知識
-.obon{
-    background:  #faf0e6;
+.obon {
+    background: #faf0e6;
+
     h4 {
         font-size: 24px;
         line-height: 1.5;
         margin-bottom: 32px;
     }
-   
-    .obon-content{
+
+    .obon-content {
         width: 65%;
-        @media(max-width:768px) {
-           width: 100%;
-           margin-top: 40px;
-        }
-    }
-    .obon-item2{
-        flex-shrink: 0;
-        margin: 80px 0px 80px 64px;
-        
+
         @media(max-width:768px) {
             width: 100%;
-            margin: 40px 0px ; //RWD
+            margin-top: 40px;
         }
     }
-    .obon-pic2{
+
+    .obon-item2 {
+        flex-shrink: 0;
+        margin: 80px 0px 80px 64px;
+
+        @media(max-width:768px) {
+            width: 100%;
+            margin: 40px 0px; //RWD
+        }
+    }
+
+    .obon-pic2 {
         width: 150px;
         height: 150px;
         border-radius: 50%;
         object-fit: cover;
+
         @media(max-width:768px) {
             width: 250px;
             height: 250px;
