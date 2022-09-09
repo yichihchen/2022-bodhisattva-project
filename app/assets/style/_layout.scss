@@ -1,8 +1,7 @@
-
 //header
 .header {
     background-color: #F6E1DC80;
-  
+
 
     .heaader-menu {
         .heaader-menu-logo {
@@ -46,7 +45,8 @@
                     background-color: $base;
                     padding: 6px 24px;
                     border-radius: 100px;
-                    &:hover{
+
+                    &:hover {
                         opacity: 0.8;
                     }
                 }
@@ -74,14 +74,17 @@
 .mobile-menu {
     background: #F6E1DC80;
     display: none !important;
-        a{
-            color:$base;
-            padding: 4px 0;
-            display: block;
-            &:hover{
-                background-color:#e1c8c2f8 ;
-            }
+
+    a {
+        color: $base;
+        padding: 8px 0;
+        display: block;
+
+        &:hover {
+            background-color: #e1c8c2f8;
         }
+    }
+
     @include iphone() {
         &.active {
             display: block !important;
