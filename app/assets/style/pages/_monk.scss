@@ -144,7 +144,7 @@
             @include iphone() {
                 width: 100%;
             }
-           
+
         }
 
         .flower {
@@ -194,4 +194,30 @@
             height: 250px;
         }
     }
+}
+
+//monk-third
+.monk-third {
+
+    .monk-content {
+        width: 260px;
+    }
+
+    .monk-pics-main {
+        width: 180px;
+        height: 333px;
+    }
+
+    .flower {
+        width: 36px;
+        height: 36px;
+    }
+
+    
+        .monk-content {
+            @include iphone() {
+                width: 100%;
+            }
+        }
+    
 }
