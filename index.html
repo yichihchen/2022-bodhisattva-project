@@ -16,19 +16,19 @@
 </head>
 
 <body>
-  <div class="header" id="#header"> <!--id-->
+  <div class="header"> 
     <div class="container">
       <div class="heaader-menu d-flex justify-content-between align-items-center">
         <a class="heaader-menu-logo d-flex align-items-center" href="index.html">
-          <img class="logo-bodhi" src="../assets/images/中間大菩薩.png" alt="logo-bodhi">
+          <img class="logo-bodhi" src="./assets/images/中間大菩薩.png" alt="logo-bodhi">
           <h1 class="ms-4 fw-bold fs-3">大悲出相圖</h1>
         </a>
-        <ul class="header-menu-group d-none d-sm-flex fs-6 lh-base ">
-          <li class="px-3"><a href="#">HOME</a></li>
-          <li class="px-3"><a href="#">STORY</a></li>
-          <li class="px-3"><a href="#">GALLERY</a></li>
+        <ul class="header-menu-group d-none d-sm-flex fs-6 lh-base " id="menu">
+          <li class="px-3"><a href="#banner">HOME</a></li>
+          <li class="px-3"><a href="#banner">STORY</a></li>
+          <li class="px-3"><a href="#gallery">GALLERY</a></li>
           <li class="px-3"><a href="#author">作者介紹</a></li><!--id-->
-          <li class="ps-3"><a class="contact-button" href="#">CONTACT US</a></li>
+          <li class="ps-3"><a class="contact-button" href="#contact">CONTACT US</a></li>
         </ul>
 
 
@@ -57,12 +57,12 @@
   </div>
 
   
-<div class="banner">
+<div class="banner" id="banner"><!--id-->
   <div class="container">
     <h3 class="text-center">STORY</h3>
     <ul class="banner-origin">
       <li class="banner-origin-list d-flex ">
-        <img class="banner-origin-story1" src="/assets/images/story-1-square.png" alt="story-1">
+        <img class="banner-origin-story1" src="./assets/images/story-1-square.png" alt="story-1">
         <div class="banner-origin-words1">
           <h2 class="mb-3">大悲咒的由來</h2>
           <p class="fw-light">「大悲出相」從意義與源流上來說，皆與〈大悲咒〉有密切的關係；
@@ -74,7 +74,7 @@
         </div>
       </li>
       <li class="banner-origin-list d-flex flex-row-reverse">
-        <img class="banner-origin-story2" src="/assets/images/story-2-square.png" alt="story-2">
+        <img class="banner-origin-story2" src="./assets/images/story-2-square.png" alt="story-2">
         <div class="banner-origin-words2">
           <h2 class="mb-3">念誦大悲咒的利益</h2>
           <p class="fw-light">若一宿誦滿五遍，可除滅身中百千萬億劫生死重罪。<br>
@@ -91,7 +91,7 @@
   </div>
 </div>
 
-<figure>
+<figure id="gallery"><!--id-->
   <div class="container">
     <h3 class="text-center">GALLERY</h3>
     <p class="text-center">大悲出相圖出現的角色分成哪幾類呢？</p>
@@ -126,7 +126,8 @@
   </div>
 </figure>
 
-<section class="author" id="#author"> <!--id-->
+<section class="author" id="author">
+  <!--id-->
 
   <div class="container">
 
@@ -146,14 +147,14 @@
         <li>禪宗哲學、禪宗美學、宗教哲學、</li>
         <li>佛教文獻學、佛典目錄學等。</li>
         <li class="author-icon d-flex justify-content-center justify-content-md-start">
-          <a href="#"><img class="author-icon-wechat" src="/assets/images/wechat.png" alt="wechat"></a>
-          <a href="#"><img class="author-icon-email" src="/assets/images/email.png" alt="email"></a>
-          <a href="#"><img class="author-icon-line" src="/assets/images/line.png" alt="line"></a>
+          <a href="#"><img class="author-icon-wechat" src="./assets/images/wechat.png" alt="wechat"></a>
+          <a href="#"><img class="author-icon-email" src="./assets/images/email.png" alt="email"></a>
+          <a href="#"><img class="author-icon-line" src="./assets/images/line.png" alt="line"></a>
         </li>
         <!--icon-->
       </ul>
       <div class="author-pic text-center text-md-start flex-shrink-0">
-        <img src="/assets/images/大頭照-266259.jpg" alt="author-pic">
+        <img src="./assets/images/大頭照-266259.jpg" alt="author-pic">
       </div>
       <div class="author-brief2 d-flex flex-column align-items-center">
         <div>
@@ -176,7 +177,7 @@
 </section>
 
 <!-- Contact start -->
-<div class="contact container-xxl py-6">
+<div class="contact container-xxl py-6" id="contact">
   <div class="container">
     <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
       <h3 class="">CONTACT US</h3>

@@ -11657,10 +11657,6 @@ img {
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .header {
   background-color: #F6E1DC80;
 }
