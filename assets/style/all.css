@@ -12503,4 +12503,24 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
   }
 }
 
+.monk-third .monk-content {
+  width: 260px;
+}
+
+.monk-third .monk-pics-main {
+  width: 180px;
+  height: 333px;
+}
+
+.monk-third .flower {
+  width: 36px;
+  height: 36px;
+}
+
+@media (max-width: 576px) {
+  .monk-third .monk-content {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=all.css.map */
