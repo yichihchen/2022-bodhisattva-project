@@ -1,3 +1,4 @@
+
 .banner {
     @include picture();
     background: linear-gradient(0deg, rgba(246, 225, 220, 0.5), rgba(246, 225, 220, 0.5)), url(../images/雲朵_確定.jpg);
@@ -237,7 +238,7 @@ figure {
 }
 
 .author {
-
+   
     .container {
         position: relative;
         //寬度其實是476px        
