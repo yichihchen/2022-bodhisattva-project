@@ -455,9 +455,7 @@ figure {
 
     .contact-label {
         margin-top: 40px;
-
-
-
+        
         .toggle {
             display: none;
         }
@@ -484,7 +482,7 @@ figure {
                 margin-top: 24px;
             }
         }
-
+        
         //跳出背景不會動，要設定
         .toggle:checked~.black-bg {
             opacity: 1;
@@ -495,6 +493,7 @@ figure {
             opacity: 1;
             transition: opacity .15s ease-in;
         }
+        
 
     }
 }
