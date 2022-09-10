@@ -5,7 +5,8 @@ engine: ejs
 current: index
 ---
 
-<div class="banner" id="banner"><!--id-->
+<div class="banner" id="banner">
+  <!--id-->
   <div class="container">
     <h3 class="text-center">STORY</h3>
     <ul class="banner-origin">
@@ -39,7 +40,8 @@ current: index
   </div>
 </div>
 
-<figure id="gallery"><!--id-->
+<figure id="gallery">
+  <!--id-->
   <div class="container">
     <h3 class="text-center">GALLERY</h3>
     <p class="text-center">大悲出相圖出現的角色分成哪幾類呢？</p>
@@ -49,7 +51,7 @@ current: index
             <h4 class="mb-3">尊者類</h4>
             <img class="rounded-2" src="./assets/images/monk.png" alt="monk">
           </a></li>
-        <li><a href="#">
+        <li><a href="god.html">
             <h4 class="mb-3">天神類</h4><img class="rounded-2" src="./assets/images/god-sky.png" alt="god">
           </a></li>
         <li>
@@ -61,7 +63,8 @@ current: index
       <div class="gallery-card-row2 d-flex justify-content-evenly flex-wrap">
         <li>
           <a href="#">
-            <h4 class="mb-3 ">菩薩類</h4><img class="gallery-card-pic4 rounded-2" src="./assets/images/pray.png" alt="pray">
+            <h4 class="mb-3 ">菩薩類</h4><img class="gallery-card-pic4 rounded-2" src="./assets/images/pray.png"
+              alt="pray">
           </a>
         </li>
         <li>
@@ -160,11 +163,32 @@ current: index
                 <label for="message">Message</label>
               </div>
             </div>
-            <div class="contact-button col-12 text-center">
-              <button class="btn btn-primary rounded-pill py-2 px-4 fs-3" type="submit">SEND MESSAGE</button>
+            <div class="contact-label col-12 text-center">
+              <!--contact-label-->
+
+
+              <label for="example1" class="contact-label-example btn btn-primary rounded-pill py-2 px-4 fs-3"
+                type="submit">SEND
+                MESSAGE</label>
+              <!--button更改label for-->
+              <input type="checkbox" id="example1" class="toggle">
+
+              <label class="black-bg" for="example1"> 
+                <!--popup背景-->
+                <div class="popup d-inline-block">
+                  <img src="./assets/images/thankyou-400280.jpg" alt="thankyou">
+                  <p class="text-center">謝謝您的回覆</p>
+                </div>
+              </label>
+              <!--popup-->
             </div>
+            <!--contact-label-end-->
+
           </div>
+
+
         </form>
+
       </div>
     </div>
   </div>
