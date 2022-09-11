@@ -12606,7 +12606,20 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
 }
 
 .dharma .dharma-topic {
+  width: 85%;
   padding: 80px 0px;
+}
+
+@media (max-width: 992px) {
+  .dharma .dharma-topic {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dharma .dharma-topic {
+    padding: 40px 0px;
+  }
 }
 
 .dharma .dharma-topic h4, .dharma .dharma-topic .h4 {
@@ -12615,10 +12628,26 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
 
 .dharma .dharma-topic img {
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 768px) {
+  .dharma .dharma-topic img {
+    width: 100%;
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .dharma .dharma-topic .dharma-content {
   margin-right: 64px;
+}
+
+@media (max-width: 768px) {
+  .dharma .dharma-topic .dharma-content {
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
