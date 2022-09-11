@@ -12650,4 +12650,53 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
   }
 }
 
+.sutra {
+  background: #faf0e6;
+}
+
+.sutra .sutra-topic {
+  width: 85%;
+  padding: 80px 0px;
+}
+
+@media (max-width: 992px) {
+  .sutra .sutra-topic {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sutra .sutra-topic {
+    padding: 40px 0px;
+  }
+}
+
+.sutra .sutra-topic h4, .sutra .sutra-topic .h4 {
+  margin-bottom: 32px;
+}
+
+.sutra .sutra-topic img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 768px) {
+  .sutra .sutra-topic img {
+    width: 100%;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.sutra .sutra-topic .sutra-content {
+  margin-left: 64px;
+}
+
+@media (max-width: 768px) {
+  .sutra .sutra-topic .sutra-content {
+    margin-left: 0;
+  }
+}
+
 /*# sourceMappingURL=all.css.map */
