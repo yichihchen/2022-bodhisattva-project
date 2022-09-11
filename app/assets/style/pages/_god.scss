@@ -11,8 +11,9 @@
         @include pad() {
             width: 100%;
         }
-        .god-content{
-            @include iphone(){
+
+        .god-content {
+            @include iphone() {
                 width: 100%;
             }
         }
@@ -38,7 +39,15 @@
     background: #f8e9e5;
 
     .dharma-topic {
+        width: 85%;
         padding: 80px 0px;
+        @include pad(){
+            width: 100%;
+        }
+
+        @media(max-width:768px) {
+            padding: 40px 0px;
+        }
 
         h4 {
             margin-bottom: 32px;
@@ -46,10 +55,22 @@
 
         img {
             border-radius: 50%;
+            width: 150px;
+            height: 150px;
+
+            @media (max-width:768px) {
+                width: 100%;
+                width: 250px;
+                height: 250px;
+            }
         }
 
         .dharma-content {
             margin-right: 64px;
+
+            @media(max-width:768px) {
+                margin-right: 0;
+            }
         }
     }
 }
