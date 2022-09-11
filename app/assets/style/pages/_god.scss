@@ -74,3 +74,43 @@
         }
     }
 }
+//高王觀世音
+.sutra {
+    background: #faf0e6;
+
+    .sutra-topic {
+        width: 85%;
+        padding: 80px 0px;
+        @include pad(){
+            width: 100%;
+        }
+
+        @media(max-width:768px) {
+            padding: 40px 0px;
+        }
+
+        h4 {
+            margin-bottom: 32px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+
+            @media (max-width:768px) {
+                width: 100%;
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        .sutra-content {
+            margin-left: 64px;
+
+            @media(max-width:768px) {
+                margin-left: 0;
+            }
+        }
+    }
+}
