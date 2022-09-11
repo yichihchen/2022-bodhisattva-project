@@ -5,3 +5,51 @@
         display: none;
     }
 }
+
+.god-topic {
+    .god-content-all {
+        @include pad() {
+            width: 100%;
+        }
+        .god-content{
+            @include iphone(){
+                width: 100%;
+            }
+        }
+    }
+
+    .god-content {
+        width: 260px;
+    }
+
+    .god-topic-pics {
+        width: 180px;
+        height: 333px;
+    }
+
+    .flower {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+//焰口法會
+.dharma {
+    background: #f8e9e5;
+
+    .dharma-topic {
+        padding: 80px 0px;
+
+        h4 {
+            margin-bottom: 32px;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        .dharma-content {
+            margin-right: 64px;
+        }
+    }
+}
