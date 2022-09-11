@@ -314,10 +314,6 @@ figure {
         @media(max-width:768px) {
             width: 100%;
             margin-left: 0px;
-
-            li {
-                text-align: left; //下了手機RWD還是置中???
-            }
         }
     }
 
@@ -476,6 +472,7 @@ figure {
             background: #FBEBDB;
             padding: 12px 12px 24px 12px;
             top: 20%;
+            left: 0;
 
             p {
                 font-size: 32px;
