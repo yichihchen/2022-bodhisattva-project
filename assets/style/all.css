@@ -12125,9 +12125,6 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
     width: 100%;
     margin-left: 0px;
   }
-  .author .author-brief li {
-    text-align: left;
-  }
 }
 
 .author .author-pic {
@@ -12307,6 +12304,7 @@ figure .gallery-card .gallery-card-row2 li a:hover img {
   background: #FBEBDB;
   padding: 12px 12px 24px 12px;
   top: 20%;
+  left: 0;
 }
 
 .contact .contact-label .popup p {
